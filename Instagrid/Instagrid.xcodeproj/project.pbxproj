@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FAAE697272404BA0055EBC8 /* ThirstyScript.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FAAE694272404BA0055EBC8 /* ThirstyScript.png */; };
+		4FAAE698272404BA0055EBC8 /* ThirstyScript.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4FAAE695272404BA0055EBC8 /* ThirstyScript.otf */; };
+		4FAAE699272404BA0055EBC8 /* Read Me First!.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4FAAE696272404BA0055EBC8 /* Read Me First!.rtf */; };
 		667DD99227216EE4006BEF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99127216EE4006BEF79 /* AppDelegate.swift */; };
 		667DD99427216EE4006BEF79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99327216EE4006BEF79 /* SceneDelegate.swift */; };
 		667DD99627216EE4006BEF79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99527216EE4006BEF79 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FAAE694272404BA0055EBC8 /* ThirstyScript.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ThirstyScript.png; sourceTree = "<group>"; };
+		4FAAE695272404BA0055EBC8 /* ThirstyScript.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstyScript.otf; sourceTree = "<group>"; };
+		4FAAE696272404BA0055EBC8 /* Read Me First!.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "Read Me First!.rtf"; sourceTree = "<group>"; };
 		667DD98E27216EE4006BEF79 /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667DD99127216EE4006BEF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		667DD99327216EE4006BEF79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FAAE692272404BA0055EBC8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4FAAE693272404BA0055EBC8 /* thirsty_script */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4FAAE693272404BA0055EBC8 /* thirsty_script */ = {
+			isa = PBXGroup;
+			children = (
+				4FAAE694272404BA0055EBC8 /* ThirstyScript.png */,
+				4FAAE695272404BA0055EBC8 /* ThirstyScript.otf */,
+				4FAAE696272404BA0055EBC8 /* Read Me First!.rtf */,
+			);
+			path = thirsty_script;
+			sourceTree = "<group>";
+		};
 		667DD98527216EE4006BEF79 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +87,7 @@
 				667DD99A27216EE6006BEF79 /* Assets.xcassets */,
 				667DD99C27216EE6006BEF79 /* LaunchScreen.storyboard */,
 				667DD99F27216EE6006BEF79 /* Info.plist */,
+				4FAAE692272404BA0055EBC8 /* Fonts */,
 			);
 			path = Instagrid;
 			sourceTree = "<group>";
@@ -125,6 +150,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FAAE697272404BA0055EBC8 /* ThirstyScript.png in Resources */,
+				4FAAE699272404BA0055EBC8 /* Read Me First!.rtf in Resources */,
+				4FAAE698272404BA0055EBC8 /* ThirstyScript.otf in Resources */,
 				667DD99E27216EE6006BEF79 /* LaunchScreen.storyboard in Resources */,
 				667DD99B27216EE6006BEF79 /* Assets.xcassets in Resources */,
 				667DD99927216EE4006BEF79 /* Main.storyboard in Resources */,
