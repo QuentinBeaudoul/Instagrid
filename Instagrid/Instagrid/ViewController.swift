@@ -15,7 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet var compositionViews: [UIView]!
     @IBOutlet var viewLayouts: [UIView]!
     
-    
+    @IBOutlet var leftLayoutViews: [UIView]!
+    @IBOutlet var centerLayoutViews: [UIView]!
+    @IBOutlet var rightLayoutViews: [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +27,12 @@ class ViewController: UIViewController {
     
     private func gesturesEvents(){
         for (_, viewLayout) in viewLayouts.enumerated() {
-            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(layoutChoiceTap(_:)))
             viewLayout.addGestureRecognizer(tapGesture)
         }
     }
     
-    @objc private func handleTap(_ sender: UITapGestureRecognizer? = nil){
+    @objc private func layoutChoiceTap(_ sender: UITapGestureRecognizer? = nil){
         
         guard let tag = sender?.view?.tag else { print("unroconized"); return }
         
@@ -38,19 +40,22 @@ class ViewController: UIViewController {
         hideAllCompositionViews()
         selectedViews[tag].isHidden = false
         compositionViews[tag].isHidden = false
-        /*switch tag {
+        switch tag {
+            // left layout
         case 0 :
-            hideAllSelected()
-            selectedViews[tag].isHidden = false
-            print("view 1 selected")
+            for leftLayoutView in leftLayoutViews {
+                //let tapGesture = UITA
+            }
+            // center layout
         case 1 :
             selectedViews[tag].isHidden = false
             print("view 2 selected")
+            // right layout
         case 2 :
             print("view 3 selected")
         default:
             print("default")
-        }*/
+        }
     }
     
     private func hideAllSelected(){
