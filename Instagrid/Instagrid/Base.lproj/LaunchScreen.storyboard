@@ -40,7 +40,7 @@
     <resources>
         <image name="Instagrid" width="41.5" height="13"/>
         <namedColor name="AccentColor">
-            <color red="0.71754664180000005" green="0.84318614010000004" blue="0.89400833850000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.71799999475479126" green="0.84299999475479126" blue="0.89399999380111694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
