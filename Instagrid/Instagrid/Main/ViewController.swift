@@ -22,6 +22,52 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         gesturesEvents()
         initFirstController()
+        
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(dragCompositionView(_:)))
+        compositionView.addGestureRecognizer(panGestureRecognizer)
+    }
+    
+    @objc private func dragCompositionView(_ sender: UIPanGestureRecognizer) {
+        switch sender.state {
+        case .began, .changed:
+            swipeCompositionViewToShare(gesture: sender)
+        case .ended, .cancelled:
+            compositionView.transform = .identity
+        default:
+            break
+        }
+    }
+    
+    private func swipeCompositionViewToShare(gesture: UIPanGestureRecognizer) {
+        let translation = gesture.translation(in: compositionView)
+        compositionView.transform = CGAffineTransform(translationX: translation.x, y: translation.y)
+        
+        print("translation x: \(translation.x)")
+        
+        if UIDevice.current.orientation.isPortrait || UIDevice.current.orientation.isFlat {
+            if translation.y <= -200 {
+                share()
+            }
+        }else {
+            if translation.x <= -200 {
+                share()
+            }
+        }
+    }
+    
+    //TODO: Implementer la logique de l'app
+    private func share(){
+        // text to share
+        let text = "This is some text that I want to share."
+        
+        // set up activity view controller
+        //let imagesToShare = viewModel.images
+        let imagesToShare = [text]
+        let activityViewController = UIActivityViewController(activityItems: imagesToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+        
+        // present the view controller
+        self.present(activityViewController, animated: true, completion: nil)
     }
     
     private func initFirstController(){

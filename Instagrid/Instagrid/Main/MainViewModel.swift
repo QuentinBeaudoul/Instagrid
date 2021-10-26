@@ -10,5 +10,6 @@ import UIKit
 
 class MainViewModel {
     var currentLayoutViewController: UIViewController?
+    var images: [UIImage]?
 }
 
