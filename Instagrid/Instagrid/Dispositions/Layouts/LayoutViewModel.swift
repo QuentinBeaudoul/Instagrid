@@ -6,7 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
 class LayoutViewModel {
     
+    var images: [UIImage]?
+    var currentView : UIView?
 }

@@ -17,6 +17,7 @@
 		4FA2107B2727F3860095B750 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2107A2727F3860095B750 /* UIViewController+Storyboard.swift */; };
 		4FA2107E272801400095B750 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2107D272801400095B750 /* MainViewModel.swift */; };
 		4FA2108327280C0B0095B750 /* LayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2108227280C0B0095B750 /* LayoutViewModel.swift */; };
+		4FA2108527281D290095B750 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2108427281D290095B750 /* LayoutViewController.swift */; };
 		667DD99227216EE4006BEF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99127216EE4006BEF79 /* AppDelegate.swift */; };
 		667DD99427216EE4006BEF79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99327216EE4006BEF79 /* SceneDelegate.swift */; };
 		667DD99627216EE4006BEF79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99527216EE4006BEF79 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 		4FA2107A2727F3860095B750 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
 		4FA2107D272801400095B750 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		4FA2108227280C0B0095B750 /* LayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewModel.swift; sourceTree = "<group>"; };
+		4FA2108427281D290095B750 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		667DD98E27216EE4006BEF79 /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667DD99127216EE4006BEF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		667DD99327216EE4006BEF79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				4FA21080272805FA0095B750 /* Center */,
 				4FA21081272806030095B750 /* Right */,
 				4FA2108227280C0B0095B750 /* LayoutViewModel.swift */,
+				4FA2108427281D290095B750 /* LayoutViewController.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				4FA210782727EB680095B750 /* RightLayoutViewModel.swift in Sources */,
 				4FA210762727EB570095B750 /* CenterLayoutViewModel.swift in Sources */,
 				4FA210722727EB310095B750 /* RightLayoutViewController.swift in Sources */,
+				4FA2108527281D290095B750 /* LayoutViewController.swift in Sources */,
 				4FA2106E2727EB0B0095B750 /* LeftLayoutViewController.swift in Sources */,
 				4FA2108327280C0B0095B750 /* LayoutViewModel.swift in Sources */,
 				4FA2107B2727F3860095B750 /* UIViewController+Storyboard.swift in Sources */,
