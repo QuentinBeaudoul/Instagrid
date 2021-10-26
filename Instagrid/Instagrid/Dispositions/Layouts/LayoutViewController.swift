@@ -58,6 +58,11 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
         provider?.loadObject(ofClass: UIImage.self) { (pickedImage, error) in
             if let image = pickedImage as? UIImage {
                 print("c'est bien une image: \(image.description)")
+                
+                //TODO: Mettre l'image en background de la vue (pb de thread)
+                DispatchQueue.main.async {
+                    self.viewModel.currentView?.backgroundColor = UIColor(patternImage: image)
+                }
             }
         }
         
