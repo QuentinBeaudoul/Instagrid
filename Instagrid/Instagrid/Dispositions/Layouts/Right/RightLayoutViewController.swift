@@ -10,9 +10,10 @@ import UIKit
 class RightLayoutViewController: UIViewController {
 
     
+    
     @IBOutlet var pictureViews: [UIView]!
     
-    let viewModel = RightLayoutViewModel()
+    let viewModel = LayoutViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

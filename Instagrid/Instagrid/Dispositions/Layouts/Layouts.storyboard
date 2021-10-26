@@ -12,7 +12,7 @@
         <!--Left Layout View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="LeftLayout" id="Y6W-OH-hqX" customClass="LeftLayoutViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LeftLayoutViewController" id="Y6W-OH-hqX" customClass="LeftLayoutViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                                     <constraint firstItem="dWY-S8-09k" firstAttribute="centerX" secondItem="aRe-aA-Mry" secondAttribute="centerX" id="hWf-nl-8Vm"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dH3-YE-5ds" userLabel="Bottom Left View">
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dH3-YE-5ds" userLabel="Bottom Left View">
                                 <rect key="frame" x="8" y="154" width="138" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="CRs-Q3-CkN">
@@ -51,7 +51,7 @@
                                     <constraint firstItem="CRs-Q3-CkN" firstAttribute="centerX" secondItem="dH3-YE-5ds" secondAttribute="centerX" id="hB1-5N-6Fn"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pI5-UF-xVD" userLabel="Bottom Right View">
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pI5-UF-xVD" userLabel="Bottom Right View">
                                 <rect key="frame" x="154" y="154" width="138" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="NwO-ld-F6f">
@@ -101,7 +101,7 @@
         <!--Center Layout View Controller-->
         <scene sceneID="yEI-Ob-yqR">
             <objects>
-                <viewController storyboardIdentifier="CenterLayout" id="roE-R8-nt1" customClass="CenterLayoutViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CenterLayoutViewController" id="roE-R8-nt1" customClass="CenterLayoutViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vVc-NS-Z37" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
                                     <constraint firstItem="jwG-22-sie" firstAttribute="centerY" secondItem="NCh-TA-mzM" secondAttribute="centerY" id="tat-iQ-LeH"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cd0-rr-ila" userLabel="Top Right VIew">
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cd0-rr-ila" userLabel="Top Right VIew">
                                 <rect key="frame" x="154" y="8" width="138" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="En5-Wt-stB">
@@ -140,7 +140,7 @@
                                     <constraint firstItem="En5-Wt-stB" firstAttribute="centerX" secondItem="Cd0-rr-ila" secondAttribute="centerX" id="r7w-IS-tMS"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loz-Pr-2hK" userLabel="Bottom View">
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="loz-Pr-2hK" userLabel="Bottom View">
                                 <rect key="frame" x="8" y="154" width="284" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="9L9-Yy-Qq2">
@@ -190,7 +190,7 @@
         <!--Right Layout View Controller-->
         <scene sceneID="pMI-YQ-LHg">
             <objects>
-                <viewController storyboardIdentifier="RightLayout" id="NRF-zR-g4M" customClass="RightLayoutViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RightLayoutViewController" id="NRF-zR-g4M" customClass="RightLayoutViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JA7-9h-XIh" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,7 +212,7 @@
                                     <constraint firstItem="8vb-ww-f93" firstAttribute="centerY" secondItem="582-BP-nhy" secondAttribute="centerY" id="sWQ-EG-6TT"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCx-V0-hSN" userLabel="Top Left View">
+                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCx-V0-hSN" userLabel="Top Left View">
                                 <rect key="frame" x="154" y="8" width="138" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="Vop-9H-7hx">
@@ -229,7 +229,7 @@
                                     <constraint firstItem="Vop-9H-7hx" firstAttribute="centerX" secondItem="iCx-V0-hSN" secondAttribute="centerX" id="xYZ-kH-NhK"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KC-9E-8Ai" userLabel="Bottom Left View">
+                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1KC-9E-8Ai" userLabel="Bottom Left View">
                                 <rect key="frame" x="8" y="154" width="138" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="75g-HI-6UJ">
@@ -246,7 +246,7 @@
                                     <constraint firstItem="75g-HI-6UJ" firstAttribute="centerX" secondItem="1KC-9E-8Ai" secondAttribute="centerX" id="U3i-Gq-rR3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pg-ND-eZ4" userLabel="Bottom Right View">
+                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pg-ND-eZ4" userLabel="Bottom Right View">
                                 <rect key="frame" x="154" y="154" width="138" height="138"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Plus" translatesAutoresizingMaskIntoConstraints="NO" id="gZr-ci-8eK">
@@ -294,7 +294,10 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="300" height="300"/>
                     <connections>
-                        <outletCollection property="pictureViews" destination="582-BP-nhy" collectionClass="NSMutableArray" id="8vc-ey-UCg"/>
+                        <outletCollection property="pictureViews" destination="582-BP-nhy" collectionClass="NSMutableArray" id="YVY-m2-Oul"/>
+                        <outletCollection property="pictureViews" destination="iCx-V0-hSN" collectionClass="NSMutableArray" id="i9m-bd-x42"/>
+                        <outletCollection property="pictureViews" destination="1KC-9E-8Ai" collectionClass="NSMutableArray" id="qLr-I6-rxT"/>
+                        <outletCollection property="pictureViews" destination="2pg-ND-eZ4" collectionClass="NSMutableArray" id="TaH-Q8-1bP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQs-DZ-XUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -12,7 +12,7 @@ class CenterLayoutViewController: UIViewController {
     
     @IBOutlet var pictureViews: [UIView]!
     
-    let viewModel = CenterLayoutViewModel()
+    let viewModel = LayoutViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

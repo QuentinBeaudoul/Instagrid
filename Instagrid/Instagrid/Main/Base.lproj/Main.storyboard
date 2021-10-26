@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -22,17 +22,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Super View">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKo-ED-CEZ">
-                                <rect key="frame" x="135.66666666666666" y="72" width="119" height="39"/>
+                                <rect key="frame" x="154.66666666666666" y="72" width="118.99999999999997" height="39"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="30"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qB9-D3-VwW" userLabel="Composition View">
-                                <rect key="frame" x="45" y="254" width="300" height="300"/>
+                                <rect key="frame" x="45" y="254" width="338" height="338"/>
                                 <color key="backgroundColor" name="SecondaryColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qB9-D3-VwW" secondAttribute="height" multiplier="1:1" id="WlC-fz-Bd5"/>
@@ -52,20 +52,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="KUO-oJ-9za">
-                                <rect key="frame" x="190.66666666666666" y="161" width="9" height="13"/>
+                                <rect key="frame" x="209.66666666666666" y="161" width="9" height="13"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="9" id="jJU-fx-33H"/>
                                     <constraint firstAttribute="height" constant="13" id="vLd-ll-ffl"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOh-vP-YsU">
-                                <rect key="frame" x="118" y="196" width="154" height="28"/>
+                                <rect key="frame" x="137" y="196" width="154" height="28"/>
                                 <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="25"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZC-Ln-QMU" userLabel="View Layout 1">
-                                <rect key="frame" x="41" y="706" width="80" height="80"/>
+                                <rect key="frame" x="60" y="788" width="80" height="80"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Layout 1" translatesAutoresizingMaskIntoConstraints="NO" id="O7p-HH-EF6">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -89,7 +89,7 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIV-GC-84y" userLabel="View Layout 2">
-                                <rect key="frame" x="155" y="706" width="80" height="80"/>
+                                <rect key="frame" x="174" y="788" width="80" height="80"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Layout 2" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-rn-bjF">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -113,7 +113,7 @@
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nko-Ge-zdz" userLabel="View Layout 3">
-                                <rect key="frame" x="269" y="706" width="80" height="80"/>
+                                <rect key="frame" x="288" y="788" width="80" height="80"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Layout 3" translatesAutoresizingMaskIntoConstraints="NO" id="lR8-uI-ZP1">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
