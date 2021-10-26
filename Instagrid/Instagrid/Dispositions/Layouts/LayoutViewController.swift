@@ -37,18 +37,16 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
         showImagePicker()
     }
 
-    
-    
     private func showImagePicker() {
         var configuration = PHPickerConfiguration(photoLibrary: .shared())
-        configuration.filter = .any(of: [.images])
+        configuration.filter = .images
         configuration.preferredAssetRepresentationMode = .current
         let picker = PHPickerViewController(configuration: configuration)
         picker.delegate = self
         present(picker, animated: true)
     }
     
-    //MARK: Delegate
+    //MARK: PHPicker Delegate
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         
         guard results.first != nil else {
@@ -56,15 +54,14 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
             return
         }
         
-        picker.dismiss(animated: true) {
-            let provider = results.first?.itemProvider
-            provider?.loadObject(ofClass: UIImage.self) { (pickedImage, error) in
-                if let image = pickedImage as? UIImage {
-                    print("c'est bien une image: \(image.description)")
-                    
-                }
+        let provider = results.first?.itemProvider
+        provider?.loadObject(ofClass: UIImage.self) { (pickedImage, error) in
+            if let image = pickedImage as? UIImage {
+                print("c'est bien une image: \(image.description)")
             }
         }
+        
+        picker.dismiss(animated: true, completion: nil)
     }
     
 }
