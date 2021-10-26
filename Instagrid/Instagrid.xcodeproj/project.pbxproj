@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA2106C2727EAC20095B750 /* Layouts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA2106B2727EAC20095B750 /* Layouts.storyboard */; };
+		4FA2106E2727EB0B0095B750 /* LeftLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2106D2727EB0B0095B750 /* LeftLayoutViewController.swift */; };
+		4FA210702727EB1F0095B750 /* CenterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2106F2727EB1F0095B750 /* CenterLayoutViewController.swift */; };
+		4FA210722727EB310095B750 /* RightLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210712727EB310095B750 /* RightLayoutViewController.swift */; };
+		4FA210742727EB440095B750 /* LeftLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210732727EB440095B750 /* LeftLayoutViewModel.swift */; };
+		4FA210762727EB570095B750 /* CenterLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210752727EB570095B750 /* CenterLayoutViewModel.swift */; };
+		4FA210782727EB680095B750 /* RightLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210772727EB680095B750 /* RightLayoutViewController.swift */; };
 		667DD99227216EE4006BEF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99127216EE4006BEF79 /* AppDelegate.swift */; };
 		667DD99427216EE4006BEF79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99327216EE4006BEF79 /* SceneDelegate.swift */; };
 		667DD99627216EE4006BEF79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99527216EE4006BEF79 /* ViewController.swift */; };
@@ -18,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA2106B2727EAC20095B750 /* Layouts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Layouts.storyboard; sourceTree = "<group>"; };
+		4FA2106D2727EB0B0095B750 /* LeftLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftLayoutViewController.swift; sourceTree = "<group>"; };
+		4FA2106F2727EB1F0095B750 /* CenterLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterLayoutViewController.swift; sourceTree = "<group>"; };
+		4FA210712727EB310095B750 /* RightLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightLayoutViewController.swift; sourceTree = "<group>"; };
+		4FA210732727EB440095B750 /* LeftLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftLayoutViewModel.swift; sourceTree = "<group>"; };
+		4FA210752727EB570095B750 /* CenterLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterLayoutViewModel.swift; sourceTree = "<group>"; };
+		4FA210772727EB680095B750 /* RightLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightLayoutViewController.swift; sourceTree = "<group>"; };
 		667DD98E27216EE4006BEF79 /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667DD99127216EE4006BEF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		667DD99327216EE4006BEF79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +55,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA210672727EA580095B750 /* Dispositions */ = {
+			isa = PBXGroup;
+			children = (
+				4FA210682727EA810095B750 /* Layouts */,
+				4FA2106A2727EAA30095B750 /* ViewControllers */,
+				4FA210692727EA920095B750 /* ViewModels */,
+			);
+			path = Dispositions;
+			sourceTree = "<group>";
+		};
+		4FA210682727EA810095B750 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2106B2727EAC20095B750 /* Layouts.storyboard */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		4FA210692727EA920095B750 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4FA210732727EB440095B750 /* LeftLayoutViewModel.swift */,
+				4FA210752727EB570095B750 /* CenterLayoutViewModel.swift */,
+				4FA210772727EB680095B750 /* RightLayoutViewController.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4FA2106A2727EAA30095B750 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2106D2727EB0B0095B750 /* LeftLayoutViewController.swift */,
+				4FA2106F2727EB1F0095B750 /* CenterLayoutViewController.swift */,
+				4FA210712727EB310095B750 /* RightLayoutViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		4FAAE692272404BA0055EBC8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +121,7 @@
 		667DD99027216EE4006BEF79 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
+				4FA210672727EA580095B750 /* Dispositions */,
 				667DD99127216EE4006BEF79 /* AppDelegate.swift */,
 				667DD99327216EE4006BEF79 /* SceneDelegate.swift */,
 				667DD99527216EE4006BEF79 /* ViewController.swift */,
@@ -141,6 +194,7 @@
 			files = (
 				668BBC162726C46100D1DF33 /* ThirstySoftRegular.otf in Resources */,
 				668BBC142726C45100D1DF33 /* Delm-Medium.otf in Resources */,
+				4FA2106C2727EAC20095B750 /* Layouts.storyboard in Resources */,
 				667DD99E27216EE6006BEF79 /* LaunchScreen.storyboard in Resources */,
 				667DD99B27216EE6006BEF79 /* Assets.xcassets in Resources */,
 				667DD99927216EE4006BEF79 /* Main.storyboard in Resources */,
@@ -155,8 +209,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				667DD99627216EE4006BEF79 /* ViewController.swift in Sources */,
+				4FA210782727EB680095B750 /* RightLayoutViewController.swift in Sources */,
+				4FA210762727EB570095B750 /* CenterLayoutViewModel.swift in Sources */,
+				4FA210722727EB310095B750 /* RightLayoutViewController.swift in Sources */,
+				4FA2106E2727EB0B0095B750 /* LeftLayoutViewController.swift in Sources */,
+				4FA210702727EB1F0095B750 /* CenterLayoutViewController.swift in Sources */,
 				667DD99227216EE4006BEF79 /* AppDelegate.swift in Sources */,
 				667DD99427216EE4006BEF79 /* SceneDelegate.swift in Sources */,
+				4FA210742727EB440095B750 /* LeftLayoutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

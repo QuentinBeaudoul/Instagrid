@@ -12,12 +12,9 @@ class ViewController: UIViewController {
     
     
     @IBOutlet var selectedViews: [UIImageView]!
-    @IBOutlet var compositionViews: [UIView]!
+    @IBOutlet weak var compositionView: UIView!
     @IBOutlet var viewLayouts: [UIView]!
     
-    @IBOutlet var leftLayoutViews: [UIView]!
-    @IBOutlet var centerLayoutViews: [UIView]!
-    @IBOutlet var rightLayoutViews: [UIView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,15 +34,12 @@ class ViewController: UIViewController {
         guard let tag = sender?.view?.tag else { print("unroconized"); return }
         
         hideAllSelected()
-        hideAllCompositionViews()
         selectedViews[tag].isHidden = false
-        compositionViews[tag].isHidden = false
+        
         switch tag {
             // left layout
         case 0 :
-            for leftLayoutView in leftLayoutViews {
-                //let tapGesture = UITA
-            }
+            print("view 1 selected")
             // center layout
         case 1 :
             selectedViews[tag].isHidden = false
@@ -63,12 +57,5 @@ class ViewController: UIViewController {
             selectedView.isHidden = true
         }
     }
-    private func hideAllCompositionViews(){
-        for compositionView in compositionViews {
-            compositionView.isHidden = true
-        }
-    }
-
-
 }
 
