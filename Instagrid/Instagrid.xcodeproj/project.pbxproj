@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FA2106C2727EAC20095B750 /* Layouts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FA2106B2727EAC20095B750 /* Layouts.storyboard */; };
+		4FA2106E2727EB0B0095B750 /* LeftLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2106D2727EB0B0095B750 /* LeftLayoutViewController.swift */; };
+		4FA210702727EB1F0095B750 /* CenterLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2106F2727EB1F0095B750 /* CenterLayoutViewController.swift */; };
+		4FA210722727EB310095B750 /* RightLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210712727EB310095B750 /* RightLayoutViewController.swift */; };
+		4FA210742727EB440095B750 /* LeftLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210732727EB440095B750 /* LeftLayoutViewModel.swift */; };
+		4FA210762727EB570095B750 /* CenterLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210752727EB570095B750 /* CenterLayoutViewModel.swift */; };
+		4FA210782727EB680095B750 /* RightLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210772727EB680095B750 /* RightLayoutViewModel.swift */; };
+		4FA2107B2727F3860095B750 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2107A2727F3860095B750 /* UIViewController+Storyboard.swift */; };
+		4FA2107E272801400095B750 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2107D272801400095B750 /* MainViewModel.swift */; };
+		4FA2108327280C0B0095B750 /* LayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2108227280C0B0095B750 /* LayoutViewModel.swift */; };
+		4FA2108527281D290095B750 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2108427281D290095B750 /* LayoutViewController.swift */; };
 		667DD99227216EE4006BEF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99127216EE4006BEF79 /* AppDelegate.swift */; };
 		667DD99427216EE4006BEF79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99327216EE4006BEF79 /* SceneDelegate.swift */; };
 		667DD99627216EE4006BEF79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99527216EE4006BEF79 /* ViewController.swift */; };
@@ -15,9 +26,21 @@
 		667DD99E27216EE6006BEF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667DD99C27216EE6006BEF79 /* LaunchScreen.storyboard */; };
 		668BBC142726C45100D1DF33 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 668BBC132726C45100D1DF33 /* Delm-Medium.otf */; };
 		668BBC162726C46100D1DF33 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 668BBC152726C46100D1DF33 /* ThirstySoftRegular.otf */; };
+		66BB5DF7272976A10048978D /* ViewModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BB5DF6272976A10048978D /* ViewModelManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FA2106B2727EAC20095B750 /* Layouts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Layouts.storyboard; sourceTree = "<group>"; };
+		4FA2106D2727EB0B0095B750 /* LeftLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftLayoutViewController.swift; sourceTree = "<group>"; };
+		4FA2106F2727EB1F0095B750 /* CenterLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterLayoutViewController.swift; sourceTree = "<group>"; };
+		4FA210712727EB310095B750 /* RightLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightLayoutViewController.swift; sourceTree = "<group>"; };
+		4FA210732727EB440095B750 /* LeftLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftLayoutViewModel.swift; sourceTree = "<group>"; };
+		4FA210752727EB570095B750 /* CenterLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterLayoutViewModel.swift; sourceTree = "<group>"; };
+		4FA210772727EB680095B750 /* RightLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightLayoutViewModel.swift; sourceTree = "<group>"; };
+		4FA2107A2727F3860095B750 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		4FA2107D272801400095B750 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		4FA2108227280C0B0095B750 /* LayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewModel.swift; sourceTree = "<group>"; };
+		4FA2108427281D290095B750 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		667DD98E27216EE4006BEF79 /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		667DD99127216EE4006BEF79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		667DD99327216EE4006BEF79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +51,7 @@
 		667DD99F27216EE6006BEF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		668BBC132726C45100D1DF33 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		668BBC152726C46100D1DF33 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		66BB5DF6272976A10048978D /* ViewModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +65,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FA210672727EA580095B750 /* Dispositions */ = {
+			isa = PBXGroup;
+			children = (
+				4FA210682727EA810095B750 /* Layouts */,
+			);
+			path = Dispositions;
+			sourceTree = "<group>";
+		};
+		4FA210682727EA810095B750 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2106B2727EAC20095B750 /* Layouts.storyboard */,
+				4FA2107F272805C30095B750 /* Left */,
+				4FA21080272805FA0095B750 /* Center */,
+				4FA21081272806030095B750 /* Right */,
+				4FA2108227280C0B0095B750 /* LayoutViewModel.swift */,
+				4FA2108427281D290095B750 /* LayoutViewController.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		4FA210792727F3420095B750 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2107A2727F3860095B750 /* UIViewController+Storyboard.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4FA2107C2728011C0095B750 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				667DD99727216EE4006BEF79 /* Main.storyboard */,
+				667DD99527216EE4006BEF79 /* ViewController.swift */,
+				4FA2107D272801400095B750 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4FA2107F272805C30095B750 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2106D2727EB0B0095B750 /* LeftLayoutViewController.swift */,
+				4FA210732727EB440095B750 /* LeftLayoutViewModel.swift */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
+		4FA21080272805FA0095B750 /* Center */ = {
+			isa = PBXGroup;
+			children = (
+				4FA2106F2727EB1F0095B750 /* CenterLayoutViewController.swift */,
+				4FA210752727EB570095B750 /* CenterLayoutViewModel.swift */,
+			);
+			path = Center;
+			sourceTree = "<group>";
+		};
+		4FA21081272806030095B750 /* Right */ = {
+			isa = PBXGroup;
+			children = (
+				4FA210712727EB310095B750 /* RightLayoutViewController.swift */,
+				4FA210772727EB680095B750 /* RightLayoutViewModel.swift */,
+			);
+			path = Right;
+			sourceTree = "<group>";
+		};
 		4FAAE692272404BA0055EBC8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -69,16 +159,26 @@
 		667DD99027216EE4006BEF79 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
+				66BB5DF5272976820048978D /* Manager */,
+				4FA2107C2728011C0095B750 /* Main */,
+				4FA210792727F3420095B750 /* Extensions */,
+				4FA210672727EA580095B750 /* Dispositions */,
 				667DD99127216EE4006BEF79 /* AppDelegate.swift */,
 				667DD99327216EE4006BEF79 /* SceneDelegate.swift */,
-				667DD99527216EE4006BEF79 /* ViewController.swift */,
-				667DD99727216EE4006BEF79 /* Main.storyboard */,
 				667DD99A27216EE6006BEF79 /* Assets.xcassets */,
 				667DD99C27216EE6006BEF79 /* LaunchScreen.storyboard */,
 				667DD99F27216EE6006BEF79 /* Info.plist */,
 				4FAAE692272404BA0055EBC8 /* Fonts */,
 			);
 			path = Instagrid;
+			sourceTree = "<group>";
+		};
+		66BB5DF5272976820048978D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				66BB5DF6272976A10048978D /* ViewModelManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +241,7 @@
 			files = (
 				668BBC162726C46100D1DF33 /* ThirstySoftRegular.otf in Resources */,
 				668BBC142726C45100D1DF33 /* Delm-Medium.otf in Resources */,
+				4FA2106C2727EAC20095B750 /* Layouts.storyboard in Resources */,
 				667DD99E27216EE6006BEF79 /* LaunchScreen.storyboard in Resources */,
 				667DD99B27216EE6006BEF79 /* Assets.xcassets in Resources */,
 				667DD99927216EE4006BEF79 /* Main.storyboard in Resources */,
@@ -155,8 +256,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				667DD99627216EE4006BEF79 /* ViewController.swift in Sources */,
+				4FA2107E272801400095B750 /* MainViewModel.swift in Sources */,
+				66BB5DF7272976A10048978D /* ViewModelManager.swift in Sources */,
+				4FA210782727EB680095B750 /* RightLayoutViewModel.swift in Sources */,
+				4FA210762727EB570095B750 /* CenterLayoutViewModel.swift in Sources */,
+				4FA210722727EB310095B750 /* RightLayoutViewController.swift in Sources */,
+				4FA2108527281D290095B750 /* LayoutViewController.swift in Sources */,
+				4FA2106E2727EB0B0095B750 /* LeftLayoutViewController.swift in Sources */,
+				4FA2108327280C0B0095B750 /* LayoutViewModel.swift in Sources */,
+				4FA2107B2727F3860095B750 /* UIViewController+Storyboard.swift in Sources */,
+				4FA210702727EB1F0095B750 /* CenterLayoutViewController.swift in Sources */,
 				667DD99227216EE4006BEF79 /* AppDelegate.swift in Sources */,
 				667DD99427216EE4006BEF79 /* SceneDelegate.swift in Sources */,
+				4FA210742727EB440095B750 /* LeftLayoutViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
