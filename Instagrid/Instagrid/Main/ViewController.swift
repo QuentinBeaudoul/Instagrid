@@ -107,19 +107,25 @@ class ViewController: UIViewController {
     }
     
     private func changeLayout(layoutIdentifier layoutId: Int){
+        var viewController: UIViewController?
+        
         switch layoutId {
         case 0:
-            guard let viewController = LeftLayoutViewController.makeFromStoryboard("Layouts") as? LeftLayoutViewController else { return }
-            bindingView(with: viewController)
+            viewController = LeftLayoutViewController.makeFromStoryboard("Layouts")
         case 1:
-            guard let viewController = CenterLayoutViewController.makeFromStoryboard("Layouts") as? CenterLayoutViewController else { return }
-            bindingView(with: viewController)
+            viewController = CenterLayoutViewController.makeFromStoryboard("Layouts")
         case 2:
-            guard let viewController = RightLayoutViewController.makeFromStoryboard("Layouts") as? RightLayoutViewController else { return }
-            bindingView(with: viewController)
+            viewController = RightLayoutViewController.makeFromStoryboard("Layouts")
         default:
             print("error")
         }
+        
+        guard let layoutViewController = viewController else {
+            print("error");
+            return;
+        }
+        
+        bindingView(with: layoutViewController)
     }
     
     private func bindingView(with viewController: UIViewController) {
