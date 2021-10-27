@@ -10,6 +10,6 @@ import UIKit
 extension UIViewController {
     //TODO: R.swift ou swiftgen
     class func makeFromStoryboard(_ storyboardName: String? = nil) -> UIViewController {
-        return UIStoryboard(name: storyboardName ?? String(describing: self).replacingOccurrences(of: "ViewController", with: ""), bundle: Bundle(identifier: "p5.qbeaudoul.Instagrid")).instantiateViewController(withIdentifier: String(describing: self))
+        return UIStoryboard(name: storyboardName ?? String(describing: self).replacingOccurrences(of: "ViewController", with: ""), bundle: Bundle.main).instantiateViewController(withIdentifier: String(describing: self))
     }
 }
