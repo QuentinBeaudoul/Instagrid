@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var viewLayouts: [UIView]!
     
     let viewModel = MainViewModel()
+    var currentLayoutViewController: UIViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,7 +124,7 @@ class ViewController: UIViewController {
     
     private func bindingView(with viewController: UIViewController) {
         
-        if let viewControllerToRemove = viewModel.currentLayoutViewController {
+        if let viewControllerToRemove = currentLayoutViewController {
             viewControllerToRemove.view.removeFromSuperview()
             viewControllerToRemove.removeFromParent()
         }
@@ -131,7 +132,7 @@ class ViewController: UIViewController {
         let childView: UIView! = viewController.view
         childView.translatesAutoresizingMaskIntoConstraints = false
         
-        viewModel.currentLayoutViewController = viewController
+        currentLayoutViewController = viewController
         compositionView.addSubview(childView)
         
         NSLayoutConstraint.activate([childView.leadingAnchor.constraint(equalTo: compositionView.leadingAnchor),
