@@ -26,6 +26,7 @@
 		667DD99E27216EE6006BEF79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 667DD99C27216EE6006BEF79 /* LaunchScreen.storyboard */; };
 		668BBC142726C45100D1DF33 /* Delm-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 668BBC132726C45100D1DF33 /* Delm-Medium.otf */; };
 		668BBC162726C46100D1DF33 /* ThirstySoftRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 668BBC152726C46100D1DF33 /* ThirstySoftRegular.otf */; };
+		66BB5DF7272976A10048978D /* ViewModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BB5DF6272976A10048978D /* ViewModelManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		667DD99F27216EE6006BEF79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		668BBC132726C45100D1DF33 /* Delm-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Delm-Medium.otf"; sourceTree = "<group>"; };
 		668BBC152726C46100D1DF33 /* ThirstySoftRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ThirstySoftRegular.otf; sourceTree = "<group>"; };
+		66BB5DF6272976A10048978D /* ViewModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 		667DD99027216EE4006BEF79 /* Instagrid */ = {
 			isa = PBXGroup;
 			children = (
+				66BB5DF5272976820048978D /* Manager */,
 				4FA2107C2728011C0095B750 /* Main */,
 				4FA210792727F3420095B750 /* Extensions */,
 				4FA210672727EA580095B750 /* Dispositions */,
@@ -168,6 +171,14 @@
 				4FAAE692272404BA0055EBC8 /* Fonts */,
 			);
 			path = Instagrid;
+			sourceTree = "<group>";
+		};
+		66BB5DF5272976820048978D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				66BB5DF6272976A10048978D /* ViewModelManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +257,7 @@
 			files = (
 				667DD99627216EE4006BEF79 /* ViewController.swift in Sources */,
 				4FA2107E272801400095B750 /* MainViewModel.swift in Sources */,
+				66BB5DF7272976A10048978D /* ViewModelManager.swift in Sources */,
 				4FA210782727EB680095B750 /* RightLayoutViewModel.swift in Sources */,
 				4FA210762727EB570095B750 /* CenterLayoutViewModel.swift in Sources */,
 				4FA210722727EB310095B750 /* RightLayoutViewController.swift in Sources */,

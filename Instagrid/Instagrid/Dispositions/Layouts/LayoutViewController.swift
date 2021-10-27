@@ -14,13 +14,20 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
     
     @IBOutlet var imageViews: [UIImageView]!
     
-    let viewModel = LayoutViewModel()
+    let viewModel = ViewModelManager.viewModel
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         gestureEvents()
+        restoreFromViewModel()
+    }
+    
+    private func restoreFromViewModel(){
+        for (index, view) in imageViews.enumerated() {
+            view.image = viewModel.images[index]
+        }
     }
     
     private func gestureEvents() {
@@ -67,6 +74,7 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
                 DispatchQueue.main.async {
                     if let imagePosition = self.viewModel.currentViewTag {
                         self.loadInsideView(withImage: image, atPosition: imagePosition)
+                        self.viewModel.images[imagePosition] = image
                     }
                 }
             }

@@ -10,6 +10,6 @@ import UIKit
 
 class LayoutViewModel {
     
-    var images: [UIImage]?
+    var images : [UIImage?] = [nil, nil, nil, nil]
     var currentViewTag : Int?
 }
