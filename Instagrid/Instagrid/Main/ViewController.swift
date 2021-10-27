@@ -58,17 +58,23 @@ class ViewController: UIViewController {
     
     //TODO: Implementer la logique de l'app
     private func share(){
-        // text to share
-        let text = "This is some text that I want to share."
+        // image to share
+        let image = generateImagetoShare()
         
         // set up activity view controller
-        //let imagesToShare = viewModel.images
-        let imagesToShare = [text]
+        let imagesToShare = [image]
         let activityViewController = UIActivityViewController(activityItems: imagesToShare, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
         
         // present the view controller
         self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    private func generateImagetoShare() -> UIImage {
+        let renderer = UIGraphicsImageRenderer(size: compositionView.bounds.size)
+        return renderer.image { ctx in
+            compositionView.drawHierarchy(in: compositionView.bounds, afterScreenUpdates: true)
+        }
     }
     
     private func initFirstController(){
