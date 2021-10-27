@@ -12,6 +12,8 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
     
     @IBOutlet var pictureViews: [UIView]!
     
+    @IBOutlet var imageViews: [UIImageView]!
+    
     let viewModel = LayoutViewModel()
     
     override func viewDidLoad() {
@@ -31,7 +33,7 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
     @objc private func tapHandler(_ sender: UITapGestureRecognizer? = nil) {
         
         guard let tag = sender?.view?.tag else { print("unroconized"); return }
-        viewModel.currentView = sender?.view
+        viewModel.currentViewTag = tag
         print("vue \(tag) clicked !")
         
         showImagePicker()
@@ -46,6 +48,10 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
         present(picker, animated: true)
     }
     
+    private func loadInsideView(withImage image: UIImage, atPosition position: Int) {
+        imageViews[position].image = image
+    }
+    
     //MARK: PHPicker Delegate
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         
@@ -58,15 +64,14 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
         provider?.loadObject(ofClass: UIImage.self) { (pickedImage, error) in
             if let image = pickedImage as? UIImage {
                 print("c'est bien une image: \(image.description)")
-                
-                //TODO: Mettre l'image en background de la vue (pb de thread)
                 DispatchQueue.main.async {
-                    self.viewModel.currentView?.backgroundColor = UIColor(patternImage: image)
+                    if let imagePosition = self.viewModel.currentViewTag {
+                        self.loadInsideView(withImage: image, atPosition: imagePosition)
+                    }
                 }
             }
         }
         
         picker.dismiss(animated: true, completion: nil)
     }
-    
 }

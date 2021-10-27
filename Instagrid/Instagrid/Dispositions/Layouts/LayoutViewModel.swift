@@ -11,5 +11,5 @@ import UIKit
 class LayoutViewModel {
     
     var images: [UIImage]?
-    var currentView : UIView?
+    var currentViewTag : Int?
 }

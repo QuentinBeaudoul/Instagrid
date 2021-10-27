@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         }
     }
     
-    // TODO: Voir SwipeGesture Recognizer
     private func swipeCompositionViewToShare(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: compositionView)
         
@@ -47,13 +46,11 @@ class ViewController: UIViewController {
         if UIDevice.current.orientation.isPortrait || UIDevice.current.orientation.isFlat {
             compositionView.transform = CGAffineTransform(translationX: 0, y: translation.y)
             if translation.y <= -200 {
-                print("shared portrait")
                 share()
             }
         }else {
             compositionView.transform = CGAffineTransform(translationX: translation.x, y: 0)
             if translation.x <= -200 {
-                print("shared landscape")
                 share()
             }
         }
