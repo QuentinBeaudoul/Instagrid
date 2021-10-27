@@ -140,14 +140,17 @@
                                             <constraint firstAttribute="width" secondItem="jwG-22-sie" secondAttribute="height" multiplier="1:1" id="hJ6-Jq-XhC"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlP-Ks-Cfc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YlP-Ks-Cfc">
                                         <rect key="frame" x="0.0" y="0.0" width="138" height="138"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="YlP-Ks-Cfc" secondAttribute="trailing" id="5qk-2T-Pv9"/>
+                                    <constraint firstItem="YlP-Ks-Cfc" firstAttribute="top" secondItem="NCh-TA-mzM" secondAttribute="top" id="IHl-jc-F0V"/>
                                     <constraint firstItem="jwG-22-sie" firstAttribute="centerX" secondItem="NCh-TA-mzM" secondAttribute="centerX" id="R5e-OE-myC"/>
+                                    <constraint firstAttribute="bottom" secondItem="YlP-Ks-Cfc" secondAttribute="bottom" id="bHh-vG-BDH"/>
+                                    <constraint firstItem="YlP-Ks-Cfc" firstAttribute="leading" secondItem="NCh-TA-mzM" secondAttribute="leading" id="cpL-HF-k5X"/>
                                     <constraint firstItem="jwG-22-sie" firstAttribute="centerY" secondItem="NCh-TA-mzM" secondAttribute="centerY" id="tat-iQ-LeH"/>
                                 </constraints>
                             </view>
