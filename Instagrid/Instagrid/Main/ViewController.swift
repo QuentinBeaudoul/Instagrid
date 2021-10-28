@@ -57,7 +57,6 @@ class ViewController: UIViewController {
         }
     }
     
-    //TODO: Implementer la logique de l'app
     private func share(){
         // image to share
         let image = generateImagetoShare()
