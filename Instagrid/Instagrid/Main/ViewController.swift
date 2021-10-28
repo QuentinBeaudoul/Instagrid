@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         compositionView.addGestureRecognizer(panGestureRecognizer)
     }
     
+    // MARK: swipe gesture handler
     @objc private func dragCompositionView(_ sender: UIPanGestureRecognizer) {
         switch sender.state {
         case .began, .changed:
@@ -39,6 +40,8 @@ class ViewController: UIViewController {
         }
     }
     
+    // used to detect the share action
+    // share action start when the swipped view y position is less or equal to -200 (x position is less or equal to -200 if landscape)
     private func swipeCompositionViewToShare(gesture: UIPanGestureRecognizer) {
         let translation = gesture.translation(in: compositionView)
         
@@ -57,6 +60,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // display the share screen
     private func share(){
         // image to share
         let image = generateImagetoShare()
@@ -70,6 +74,8 @@ class ViewController: UIViewController {
         self.present(activityViewController, animated: true, completion: nil)
     }
     
+    // use the UIGraphicsImageRenderer to create a UIView of the compositionView
+    // Return a UIView
     private func generateImagetoShare() -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: compositionView.bounds.size)
         return renderer.image { ctx in
@@ -77,18 +83,21 @@ class ViewController: UIViewController {
         }
     }
     
+    // init the first selected UIViewController to the CenterLayoutViewController
     private func initFirstController(){
         guard let viewController = CenterLayoutViewController.makeFromStoryboard("Layouts") as? CenterLayoutViewController else { return }
         bindingView(with: viewController)
     }
     
+    // add a tapGestureRocognizer to each layout View
     private func gesturesEvents(){
         for viewLayout in viewLayouts {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(layoutChoiceTap(_:)))
             viewLayout.addGestureRecognizer(tapGesture)
         }
     }
-    
+    // handle the layout choice made by the user
+    // Update the interface
     @objc private func layoutChoiceTap(_ sender: UITapGestureRecognizer? = nil){
         
         guard let tag = sender?.view?.tag else { print("unroconized"); return }
@@ -99,12 +108,14 @@ class ViewController: UIViewController {
         
     }
     
+    // Hide all potential selected choices
     private func hideAllSelected(){
         for selectedView in selectedViews {
             selectedView.isHidden = true
         }
     }
     
+    // load the layout UIViewController depending of the user selection
     private func changeLayout(layoutIdentifier layoutId: Int){
         var viewController: UIViewController?
         
@@ -127,6 +138,7 @@ class ViewController: UIViewController {
         bindingView(with: layoutViewController)
     }
     
+    // remove the previous view and update the interface depending of the UIViewController passed in parameter
     private func bindingView(with viewController: UIViewController) {
         
         if let viewControllerToRemove = currentLayoutViewController {

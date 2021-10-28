@@ -24,12 +24,14 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
         restoreFromViewModel()
     }
     
+    // restore previous picked images
     private func restoreFromViewModel(){
         for (index, view) in imageViews.enumerated() {
             view.image = viewModel.images[index]
         }
     }
     
+    // add tapGestureRocognizer on each picture view
     private func gestureEvents() {
         for pictureView in pictureViews {
             let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapHandler(_:)))
@@ -37,15 +39,15 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
         }
     }
     
+    // handle the picture view tap gesture
     @objc private func tapHandler(_ sender: UITapGestureRecognizer? = nil) {
         
         guard let tag = sender?.view?.tag else { print("unroconized"); return }
         viewModel.currentViewTag = tag
-        print("vue \(tag) clicked !")
-        
         showImagePicker()
     }
 
+    // show the user photo library filtred on "images" only
     private func showImagePicker() {
         var configuration = PHPickerConfiguration(photoLibrary: .shared())
         configuration.filter = .images
@@ -55,11 +57,13 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
         present(picker, animated: true)
     }
     
+    // put chosen image inside imageView at chosen postion
     private func loadInsideView(withImage image: UIImage, atPosition position: Int) {
         imageViews[position].image = image
     }
     
     //MARK: PHPicker Delegate
+    // PhpPickerViewController result handler
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
         
         guard results.first != nil else {
@@ -70,7 +74,6 @@ class LayoutViewController: UIViewController, PHPickerViewControllerDelegate {
         let provider = results.first?.itemProvider
         provider?.loadObject(ofClass: UIImage.self) { (pickedImage, error) in
             if let image = pickedImage as? UIImage {
-                print("c'est bien une image: \(image.description)")
                 DispatchQueue.main.async {
                     if let imagePosition = self.viewModel.currentViewTag {
                         self.loadInsideView(withImage: image, atPosition: imagePosition)

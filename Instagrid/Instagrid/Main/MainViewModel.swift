@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import UIKit
 
 class MainViewModel {
-    var images: [UIImage]?
+    // add some business logic here if needed
 }
 
