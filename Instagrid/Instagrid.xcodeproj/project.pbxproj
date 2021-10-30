@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,6 @@
 		4FA210762727EB570095B750 /* CenterLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210752727EB570095B750 /* CenterLayoutViewModel.swift */; };
 		4FA210782727EB680095B750 /* RightLayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA210772727EB680095B750 /* RightLayoutViewModel.swift */; };
 		4FA2107B2727F3860095B750 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2107A2727F3860095B750 /* UIViewController+Storyboard.swift */; };
-		4FA2107E272801400095B750 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2107D272801400095B750 /* MainViewModel.swift */; };
 		4FA2108327280C0B0095B750 /* LayoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2108227280C0B0095B750 /* LayoutViewModel.swift */; };
 		4FA2108527281D290095B750 /* LayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA2108427281D290095B750 /* LayoutViewController.swift */; };
 		667DD99227216EE4006BEF79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667DD99127216EE4006BEF79 /* AppDelegate.swift */; };
@@ -38,7 +37,6 @@
 		4FA210752727EB570095B750 /* CenterLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterLayoutViewModel.swift; sourceTree = "<group>"; };
 		4FA210772727EB680095B750 /* RightLayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightLayoutViewModel.swift; sourceTree = "<group>"; };
 		4FA2107A2727F3860095B750 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
-		4FA2107D272801400095B750 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		4FA2108227280C0B0095B750 /* LayoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewModel.swift; sourceTree = "<group>"; };
 		4FA2108427281D290095B750 /* LayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewController.swift; sourceTree = "<group>"; };
 		667DD98E27216EE4006BEF79 /* Instagrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,7 +97,6 @@
 			children = (
 				667DD99727216EE4006BEF79 /* Main.storyboard */,
 				667DD99527216EE4006BEF79 /* ViewController.swift */,
-				4FA2107D272801400095B750 /* MainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -217,7 +214,7 @@
 				};
 			};
 			buildConfigurationList = 667DD98927216EE4006BEF79 /* Build configuration list for PBXProject "Instagrid" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -256,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				667DD99627216EE4006BEF79 /* ViewController.swift in Sources */,
-				4FA2107E272801400095B750 /* MainViewModel.swift in Sources */,
 				66BB5DF7272976A10048978D /* ViewModelManager.swift in Sources */,
 				4FA210782727EB680095B750 /* RightLayoutViewModel.swift in Sources */,
 				4FA210762727EB570095B750 /* CenterLayoutViewModel.swift in Sources */,

@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var compositionView: UIView!
     @IBOutlet var viewLayouts: [UIView]!
     
-    let viewModel = MainViewModel()
     var currentLayoutViewController: UIViewController?
     
     override func viewDidLoad() {
