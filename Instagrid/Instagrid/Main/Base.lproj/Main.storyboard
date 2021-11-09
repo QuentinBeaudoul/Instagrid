@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="landscape" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -22,17 +22,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Super View">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Instagrid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKo-ED-CEZ">
-                                <rect key="frame" x="259.5" y="11" width="119" height="39"/>
+                                <rect key="frame" x="100.5" y="28" width="119" height="39"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="30"/>
                                 <color key="textColor" name="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qB9-D3-VwW" userLabel="Composition View">
-                                <rect key="frame" x="196" y="66" width="246" height="246"/>
+                                <rect key="frame" x="45" y="210" width="230" height="230"/>
                                 <color key="backgroundColor" name="SecondaryColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="qB9-D3-VwW" secondAttribute="height" multiplier="1:1" id="WlC-fz-Bd5"/>
@@ -65,7 +65,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZC-Ln-QMU" userLabel="View Layout 1">
-                                <rect key="frame" x="472" y="66" width="80" height="80"/>
+                                <rect key="frame" x="6" y="464" width="80" height="80"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Layout 1" translatesAutoresizingMaskIntoConstraints="NO" id="O7p-HH-EF6">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -89,7 +89,7 @@
                                 </constraints>
                             </view>
                             <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VIV-GC-84y" userLabel="View Layout 2">
-                                <rect key="frame" x="472" y="149" width="80" height="80"/>
+                                <rect key="frame" x="120" y="464" width="80" height="80"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Layout 2" translatesAutoresizingMaskIntoConstraints="NO" id="ll1-rn-bjF">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -113,7 +113,7 @@
                                 </constraints>
                             </view>
                             <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nko-Ge-zdz" userLabel="View Layout 3">
-                                <rect key="frame" x="472" y="232" width="80" height="80"/>
+                                <rect key="frame" x="234" y="464" width="80" height="80"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Layout 3" translatesAutoresizingMaskIntoConstraints="NO" id="lR8-uI-ZP1">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -182,22 +182,18 @@
                                 <exclude reference="OOh-vP-YsU"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Q2W-Ve-bWu"/>
-                                <exclude reference="Qz4-H1-dRg"/>
-                                <exclude reference="eSW-Sl-SXk"/>
                                 <exclude reference="eBy-J2-w0B"/>
                                 <exclude reference="pMR-Da-Zcc"/>
                                 <exclude reference="8bi-0m-c9u"/>
                                 <exclude reference="ctg-wx-r6o"/>
+                                <exclude reference="Q2W-Ve-bWu"/>
+                                <exclude reference="Qz4-H1-dRg"/>
+                                <exclude reference="eSW-Sl-SXk"/>
                                 <exclude reference="clW-H5-ep6"/>
                                 <exclude reference="jT5-Nb-Yo5"/>
                                 <exclude reference="luf-fe-Ja1"/>
                                 <exclude reference="ofQ-BY-sSf"/>
                                 <exclude reference="uik-Xg-DDG"/>
-                                <exclude reference="Ew7-Sh-jPc"/>
-                                <exclude reference="fxQ-fp-OZb"/>
-                                <exclude reference="i6L-Uy-vb2"/>
-                                <exclude reference="vSx-OT-BTz"/>
                                 <exclude reference="3mm-v3-Y7l"/>
                                 <exclude reference="8iO-Da-gYQ"/>
                                 <exclude reference="GgS-nJ-6Fd"/>
@@ -206,6 +202,10 @@
                                 <exclude reference="p4v-I0-JF1"/>
                                 <exclude reference="vBu-m8-nMj"/>
                                 <exclude reference="w72-xI-X7v"/>
+                                <exclude reference="Ew7-Sh-jPc"/>
+                                <exclude reference="fxQ-fp-OZb"/>
+                                <exclude reference="i6L-Uy-vb2"/>
+                                <exclude reference="vSx-OT-BTz"/>
                                 <exclude reference="OYw-aw-Q6A"/>
                                 <exclude reference="yQ2-jS-LOY"/>
                                 <exclude reference="8Pq-JL-JWS"/>
@@ -227,13 +227,13 @@
                                 <include reference="Qz4-H1-dRg"/>
                                 <include reference="eSW-Sl-SXk"/>
                                 <include reference="jT5-Nb-Yo5"/>
-                                <include reference="Ew7-Sh-jPc"/>
-                                <include reference="fxQ-fp-OZb"/>
                                 <include reference="3mm-v3-Y7l"/>
                                 <include reference="GgS-nJ-6Fd"/>
                                 <include reference="KOg-vJ-Kag"/>
                                 <include reference="Mai-Yg-r8Q"/>
                                 <include reference="w72-xI-X7v"/>
+                                <include reference="Ew7-Sh-jPc"/>
+                                <include reference="fxQ-fp-OZb"/>
                                 <include reference="OYw-aw-Q6A"/>
                                 <include reference="yQ2-jS-LOY"/>
                                 <include reference="uWN-zk-Ext"/>
@@ -256,11 +256,11 @@
                                 <include reference="luf-fe-Ja1"/>
                                 <include reference="ofQ-BY-sSf"/>
                                 <include reference="uik-Xg-DDG"/>
-                                <include reference="i6L-Uy-vb2"/>
-                                <include reference="vSx-OT-BTz"/>
                                 <include reference="8iO-Da-gYQ"/>
                                 <include reference="p4v-I0-JF1"/>
                                 <include reference="vBu-m8-nMj"/>
+                                <include reference="i6L-Uy-vb2"/>
+                                <include reference="vSx-OT-BTz"/>
                                 <include reference="8Pq-JL-JWS"/>
                                 <include reference="EiO-ev-Svu"/>
                                 <include reference="W3j-Qn-Sj5"/>
